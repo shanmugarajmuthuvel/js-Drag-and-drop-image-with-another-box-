@@ -3,18 +3,18 @@ var body=document.querySelector(".body")
 var boxes=document.querySelectorAll(".box")
 var imag=document.querySelector(".imag")
 boxes.forEach(function(box){
-	    box.addEventListener("dragover",mani)
-		     function mani(e){
-			e.preventDefault()
-			box.classList.add("hover")
+	    box.addEventListener("dragover",drag)
+		     function drag(event){
+			event.preventDefault()
+			box.classList.toggle("hover")
 			
 		}
-		box.addEventListener("dragleave",sha)
-		   function sha(){
+		box.addEventListener("dragleave",leave)
+		   function leave(){
 			   box.classList.remove("hover")
 		   }
-		   box.addEventListener("drop",poor)
-		   function poor(){
+		   box.addEventListener("drop",drop)
+		   function drop(){
 			   box.appendChild(imag)
 		   }
 })
