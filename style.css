@@ -1,0 +1,37 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+.container{
+   display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+ position:relative;
+ height:160px;
+ width:160px;
+ border:2px solid black;
+ }
+ body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imag{
+	height:100%;
+	width:100%;
+	background-image:url("image/image.jpeg");
+	background-size:cover;
+}
+.hover{
+	border:2px dashed black;
+}
+.bod{
+	background-color:blue;
+}
